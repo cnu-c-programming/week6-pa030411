@@ -6,11 +6,14 @@ int main() {
         {4, 5, 6}
     };
 
-    for (int i = 0; i < 2; i++) {
-        for (int j = 0; j < 3; j++) {
-            printf("%p\n", (void *)&arr[i][j]);
-        }
-    }
+    printf("%p\n", (void *)&arr);
+    printf("%p\n", (void *)&arr[0]);
+    printf("%p\n", (void *)&arr[0][0]);
+    printf("\n");
+
+    printf("%zu\n", sizeof(arr));
+    printf("%zu\n", sizeof(arr[0]));
+    printf("%zu\n", sizeof(arr[0][0]));
 
     return 0;
 }
